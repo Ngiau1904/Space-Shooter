@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31C2C6E3-CA83-461F-96A2-6B551913E9BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FinalTest</RootNamespace>
+    <AssemblyName>FinalTest</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonCustomize.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\ChonPhiThuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChonPhiThuyen.Designer.cs">
+      <DependentUpon>ChonPhiThuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GiaoDienChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GiaoDienChinh.Designer.cs">
+      <DependentUpon>GiaoDienChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\GiaoDienGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GiaoDienGame.Designer.cs">
+      <DependentUpon>GiaoDienGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\ThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ThongTin.Designer.cs">
+      <DependentUpon>ThongTin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\ChonPhiThuyen.resx">
+      <DependentUpon>ChonPhiThuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GiaoDienChinh.resx">
+      <DependentUpon>GiaoDienChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GiaoDienGame.resx">
+      <DependentUpon>GiaoDienGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ThongTin.resx">
+      <DependentUpon>ThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alient1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alient2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bullet2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alien4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\life.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GameOver2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intro.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shooter.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlienShoot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alien5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Win.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SapceShip2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SapceShip3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SapceShip1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spr_bullet_strip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shooter3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlienHit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shooter2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ĐỘ TỘC 2 - FROM MIXI WITH LOVE - MASEW x PHÚC DU x PHÁO x ĐỘ MIXI [OFFICIAL MV LYRIC] %28mp3cut.net%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shooter4.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
